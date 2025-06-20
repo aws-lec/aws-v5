@@ -20,6 +20,11 @@ public class BookApiController {
 
     private final BookService bookService;
 
+    /**
+     * 로드밸런서가 EC2에 jar 배포 후 헬스 체크 하는 주소
+     * 
+     * @return
+     */
     @GetMapping("/")
     public String home() {
         return "<h1>aws-v5</h1>";
